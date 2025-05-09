@@ -1,4 +1,5 @@
 import App from './App'
+import uviewPlus from '@/uni_modules/uview-plus'
 
 // #ifndef VUE3
 import Vue from 'vue'
@@ -8,6 +9,7 @@ App.mpType = 'app'
 const app = new Vue({
   ...App
 })
+app.use(uviewPlus)
 app.$mount()
 // #endif
 
